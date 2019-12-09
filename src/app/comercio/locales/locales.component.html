@@ -1,0 +1,8 @@
+<app-barra titulo="Administración de locales" agregar="true" (emitirAgregar)="agregarLocal()"></app-barra>
+
+<mat-accordion>
+  <app-local-list *ngFor="let item of locales" [local]="item" (emitirEditar)="editarLocal($event)"
+    (emitirEliminar)="confirmarDialogo($event)">
+
+  </app-local-list>
+</mat-accordion>

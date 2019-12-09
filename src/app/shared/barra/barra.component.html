@@ -1,0 +1,21 @@
+<mat-toolbar color="primary">
+    <button mat-icon-button *ngIf="atras" (click)="accionAtras()">
+        <mat-icon aria-label="Agregar">arrow_back</mat-icon>
+    </button>
+
+    {{ titulo }}
+    <span fxFlex></span>
+
+    <button mat-mini-fab *ngIf="agregar" (click)="accionAgregar()" >
+        <mat-icon aria-label="Agregar">add</mat-icon>
+    </button>
+
+    <button mat-mini-fab *ngIf="editar" (click)="accionEditar()">
+        <mat-icon aria-label="Agregar">edit</mat-icon>
+    </button>
+
+    <button mat-mini-fab *ngIf="buscar" (click)="accionBuscar()">
+        <mat-icon aria-label="Agregar">search</mat-icon>
+    </button>
+
+</mat-toolbar>

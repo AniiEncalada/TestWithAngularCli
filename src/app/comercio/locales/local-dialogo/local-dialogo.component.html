@@ -1,0 +1,6 @@
+<p>local-dialogo works!</p>
+<form [formGroup]="form">
+  <input matInput placeholder="nombre" type="text" formControlName="nombre" required>
+  <button mat-raised-button (click)="cancelar()">Cancelar</button>
+  <button mat-raised-button color="primary" (click)="aceptar()">Aceptar</button>
+</form>

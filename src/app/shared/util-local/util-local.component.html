@@ -1,0 +1,17 @@
+<mat-expansion-panel *ngIf="local">
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      {{ local.nombre }}
+    </mat-panel-title>
+    <mat-card-actions align="end">
+      <button mat-icon-button (click)="accionEditar()">
+        <mat-icon>edit</mat-icon>
+      </button>
+      <button mat-icon-button (click)="accionEliminar()">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </mat-card-actions>
+    <mat-panel-description>
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+</mat-expansion-panel>
